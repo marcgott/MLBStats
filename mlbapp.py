@@ -50,7 +50,7 @@ class MLBapp:
         for index,division in enumerate(self.standings.divisions):
             #print(dir(division))
             self.lbl = Label(window, text=division.name, font=("Arial",14))
-            self.lbl.grid(column=index, row=1, pady=1)
+            self.lbl.grid(column=index, row=1, padx=2, pady=2, sticky=N)
 
             for tdx,team in enumerate(division.teams):
                 #print(dir(team))
