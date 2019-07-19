@@ -3,7 +3,7 @@
 import mlbgame
 from tkinter import *
 import datetime
-from tkinter_components.CalendarDialog import CalendarDialog, ttkcalendar, tkSimpleDialog
+
 """
 A game id is yyyy_mm_dd_away(lc)mlb_home(lc)mlb_gamenum
 Examples
@@ -80,7 +80,7 @@ class MLBapp:
                 print("Score: ", daygames.home_team_runs, "to", daygames.away_team_runs)
 
     def show_calendar(self):
-        CalendarDialog.CalendarDialog()
+        pass
 
 window = Tk()
 window.title("MLB Stats")
